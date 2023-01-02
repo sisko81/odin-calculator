@@ -24,7 +24,15 @@ body {
     font-size: 2rem;
     border: 2px solid white;
     outline: none;
-    background-color: rgba(250,250,250, .50);
+    background-color: rgba(250, 250, 250, 0.5);
+}
+
+button[data-operand] {
+    background-color: rgb(247, 255, 18);
+}
+
+button[data-equals] {
+    background-color: rgba(101, 193, 236, 0.439);
 }
 
 .calculator-grid > button:hover {
