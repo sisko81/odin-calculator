@@ -31,12 +31,21 @@ class Calculator {
     }
 
     compute() {
+      let computation;
+      const prev = parseFloat(this.previousOperand);
+      const current = parseFloat(this.currentOperand);
 
     }
 
     updateDisplay() {
-      this.currentOperandTextElement.innerText = this.currentOperand
-      this.previousOperandTextElement.innerText = this.previousOperand
+      this.currentOperandTextElement.innerText = this.currentOperand;
+      this.previousOperandTextElement.innerText = this.previousOperand;
+
+      if(isNaN(prev) || isNaN(current)) return
+      switch(this.operation) {
+        case '+':
+            computation = prev + current
+      }
 
     }
 }
