@@ -19,6 +19,18 @@ body {
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
 
+.logo-container {
+    background: linear-gradient(to right, rgb(254, 235, 235), skyblue);
+    border-bottom: none;
+    width: 400px;
+    margin-top: 70px;
+    text-align: end;
+    padding: 16px 24px 0 0;
+    font-size: 10px;
+    color: white;
+}
+
+
 .calculator-grid > button {
     cursor: pointer;
     font-size: 2rem;
@@ -27,12 +39,17 @@ body {
     background-color: rgba(250, 250, 250, 0.5);
 }
 
-button[data-operand] {
-    background-color: rgb(247, 255, 18);
+button[data-all-clear] {
+    background: linear-gradient(to right, rgb(254, 235, 235), skyblue);
+}
+
+button[data-operation] {
+    background-color: skyblue;
 }
 
 button[data-equals] {
-    background-color: rgba(101, 193, 236, 0.439);
+    background: linear-gradient(to right,  skyblue, rgb(254, 235, 235));
+    height: 100px;
 }
 
 .calculator-grid > button:hover {
@@ -63,4 +80,11 @@ button[data-equals] {
 .output .current-operand {
     color: white;
     font-size: 2.5rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
