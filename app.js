@@ -1,6 +1,6 @@
 
 let counterContainer = document.querySelector(".website-counter");
-
+let visitCount = localStorage.getItem("page_view");
 
 class Calculator {
     constructor(previousOperandTextElement, currentOperandTextElement) {
