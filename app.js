@@ -1,3 +1,7 @@
+
+let counterContainer = document.querySelector(".website-counter");
+
+
 class Calculator {
     constructor(previousOperandTextElement, currentOperandTextElement) {
         this.previousOperandTextElement = previousOperandTextElement;
@@ -133,3 +137,5 @@ deleteButton.addEventListener('click', button => {
   calculator.delete();
   calculator.updateDisplay()
 })
+
+
