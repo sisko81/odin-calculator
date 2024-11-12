@@ -147,12 +147,4 @@ deleteButton.addEventListener('click', button => {
   calculator.updateDisplay()
 })
 
-const api = 'https://api.countapi.xyz/api/v1/count';
-const url = 'https://sisko81.github.io/odin-calculator/';
-const request = api + '?url=' + url;
-
-fetch(request)
-  .then(response => response.json())
-  .then(data => console.log(data));
-
 
