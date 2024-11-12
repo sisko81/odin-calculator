@@ -82,6 +82,10 @@ button[data-equals] {
     font-size: 2.5rem;
 }
 
+.count-text {
+    color: black;
+}
+
 .footer-container {
     display: flex;
     justify-content: center;
