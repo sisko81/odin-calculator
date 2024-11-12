@@ -82,6 +82,10 @@ button[data-equals] {
     font-size: 2.5rem;
 }
 
+.counter-container {
+    display: flex;
+}
+
 .count-text {
     color: black;
 }
