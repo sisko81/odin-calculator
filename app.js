@@ -1,3 +1,16 @@
+
+let counterContainer = document.querySelector(".website-counter");
+let visitCount = localStorage.getItem("page_view");
+
+visitCount = Number(visitCount) + 1;
+
+//Update local storage value
+localStorage.setItem("page_view", visitCount);
+
+console.log(visitCount);
+
+counterContainer.textContent = visitCount;
+
 class Calculator {
     constructor(previousOperandTextElement, currentOperandTextElement) {
         this.previousOperandTextElement = previousOperandTextElement;
@@ -133,3 +146,5 @@ deleteButton.addEventListener('click', button => {
   calculator.delete();
   calculator.updateDisplay()
 })
+
+
